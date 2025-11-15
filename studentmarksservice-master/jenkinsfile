@@ -19,6 +19,7 @@ pipeline {
             steps {
                 // Build docker image using Dockerfile
                 bat "docker build -t ${IMAGE_NAME}:${IMAGE_TAG} -f Dockerfile ."
+                //commit
             }
         }
         /*
